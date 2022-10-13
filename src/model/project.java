@@ -2,15 +2,14 @@ package model;
 
 import java.util.Date;
 
-public class project { //atributos
+public class project { // atributos
 	private int id;
 	private String name;
 	private String description;
 	private Date createdAt;
 	private Date updatedAt;
-	
-	
-	public project(int id, String name, String description, Date createdAt, Date updatedAt) { //método construtor
+
+	public project(int id, String name, String description, Date createdAt, Date updatedAt) { // método construtor
 		super();
 		this.id = id;
 		this.name = name;
@@ -19,65 +18,53 @@ public class project { //atributos
 		this.updatedAt = updatedAt;
 	}
 
-		//getters e setters: métodos de acesso
+	// getters e setters: métodos de acesso
 	public int getId() {
 		return id;
 	}
-
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
 	public String getName() {
 		return name;
 	}
-
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
 	public String getDescription() {
 		return description;
 	}
-
 
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
-
 	public Date getCreatedAt() {
 		return createdAt;
 	}
-
 
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}
 
-
 	public Date getUpdatedAt() {
 		return updatedAt;
 	}
-
 
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
 
-	// Método público que retorna uma String e essa String tem o nome da classe, nome do atributo e o valor armazenado nele
+	// Método público que retorna uma String e essa String tem o nome da classe,
+	// nome do atributo e o valor armazenado nele
 	@Override
 	public String toString() {
 		return "project [id=" + id + ", name=" + name + ", description=" + description + ", createdAt=" + createdAt
 				+ ", updatedAt=" + updatedAt + "]";
 	}
-	
-	
-	
-	
 
 }
