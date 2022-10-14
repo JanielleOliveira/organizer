@@ -1,10 +1,15 @@
 package organizer;
 
+import java.sql.Connection;
+
+import util.ConnectionFactory;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Connection c = ConnectionFactory.getConnection();
+		
+		ConnectionFactory.closeConnection(c);
 	}
 
 }

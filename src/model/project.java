@@ -2,14 +2,14 @@ package model;
 
 import java.util.Date;
 
-public class project { // atributos
+public class Project { // atributos
 	private int id;
 	private String name;
 	private String description;
 	private Date createdAt;
 	private Date updatedAt;
 
-	public project(int id, String name, String description, Date createdAt, Date updatedAt) { // método construtor
+	public Project(int id, String name, String description, Date createdAt, Date updatedAt) { // método construtor
 		super();
 		this.id = id;
 		this.name = name;
